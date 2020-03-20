@@ -1,3 +1,6 @@
 [submodule "data/COVID-19"]
-	path = data/COVID-19
+	path = data/CSSEGISandData_COVID-19
 	url = git@github.com:CSSEGISandData/COVID-19.git
+[submodule "data/pcm-dpc_COVID-19"]
+	path = data/pcm-dpc_COVID-19
+	url = git@github.com:pcm-dpc/COVID-19.git
