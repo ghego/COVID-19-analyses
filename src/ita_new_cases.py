@@ -8,7 +8,7 @@ dfita['data'] = pd.to_datetime(dfita['data'])
 dfitapvt = dfita.pivot(columns='denominazione_regione', index='data', values='totale_casi')
 ts = dfitapvt.sum(axis=1).diff()
 
-fig, ax = plt.subplots(figsize=(15,7))
+fig, ax = plt.subplots(figsize=(10,6))
 ax.bar(ts.index, ts.values)
 ax.xaxis.set_major_locator(mdates.WeekdayLocator())
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
